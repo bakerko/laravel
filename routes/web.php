@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+
+    $test_var='Hi there!';
+
+    return view('view_def', compact('test_var'));
 });
